@@ -6,23 +6,23 @@ body {
     padding:0px;
   }
 
-  /*#navbar {
+  #navbar {
     width: 100%;
     height: auto;
     background-color: #00555C;
     position: sticky;
     top: 0;
-}*/
-/*#navbar a {
+}
+#navbar a {
     display: inline-block;
     text-decoration: none;
     color: white;
     margin: 30px 50px;
     font-size: 20px;
-}*/
+}
 
 
-#navbar{
+/* #navbar{
     width:83%;
     height:100px;
     float: right;
@@ -36,7 +36,7 @@ body {
     color: white;
     margin: 30px 50px;
     font-size: 20px;
-}
+} */
 
 
 /* #navbar a{
