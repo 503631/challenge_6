@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 body {
     background-image: url('../images/backgraund.jpeg');
     background-size: cover;
@@ -22,8 +22,6 @@ body {
 }*/
 
 
-=======
-
 #navbar{
     width:70%;
     height:100px;
@@ -45,7 +43,6 @@ background-color: #00555C;
 }
 .logovista{
     height:100px;
->>>>>>> Stashed changes
 }
 
 #footer {
