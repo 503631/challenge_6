@@ -89,3 +89,9 @@ background-color: #00555C;
     height: 30px;
     background-color: red;
 }
+
+#contact{
+    top :50px;
+    left: 150px;
+    position: relative;
+}
