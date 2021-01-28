@@ -22,6 +22,11 @@ $_SESSION['true'] = false; ?> -->
  
   <!-- #endregion -->
 
+  <div id="filter"> 
+  <?php include_once("inc/filter.inc.php") ?>
+  </div>
+
+
 
 
 
