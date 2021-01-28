@@ -64,3 +64,28 @@ background-color: #00555C;
     line-height: 84px;
     margin-top:182px;
 }
+
+
+
+.contentItem {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 300px;
+    height: 330px;
+    box-shadow: 0px 0px 25px lightgrey;
+    padding: 10px;
+}
+
+.test {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+.button {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    background-color: red;
+}
