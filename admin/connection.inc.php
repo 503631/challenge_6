@@ -1,7 +1,7 @@
 <?php 
     function getDbConnection(){
         $dbhost     = "localhost";
-        $dbname     = "db_showroom";
+        $dbname     = "webshop";
         $dbuser     = "root";
         $dbpass     = "";
         $conn       = "";          // connection string
