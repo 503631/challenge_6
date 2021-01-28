@@ -1,9 +1,9 @@
 <?php 
     function getDbConnection(){
         $dbhost     = "localhost";
-        $dbname     = "webshop";
-        $dbuser     = "Even";
-        $dbpass     = "Even";
+        $dbname     = "db_showroom";
+        $dbuser     = "root";
+        $dbpass     = "";
         $conn       = "";          // connection string
         $pdo        = "";          // handler
         $charset = 'utf8mb4';

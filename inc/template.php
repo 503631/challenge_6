@@ -11,7 +11,7 @@
 
 <?php
 
-   // $image = imagecreatefromstring($blob); 
+//    $image = imagecreatefromstring($blob); 
 
 echo '<div class="contentItem">';
 echo '<form action="./showroom_cars.php" method="post">';
@@ -27,7 +27,7 @@ echo'</form>';
 
 
 
-// $image = base64_encode($image);
+// $image = base64_encode($img);
 
 //    $menu = <<<HTML
 //    <form action="./shopping.php" method="post">
@@ -36,10 +36,8 @@ echo'</form>';
 //      <div  class="menutitle" name="id">$merken</div>
 //         <!-- <div class="price" name="prijs">$image</div> -->
 //      </div>
-//         <img src="$img">
 //         <img src="data:image/jpg;base64,'.base64_encode($image).'" />
 //         <img class="test" src="data:image/jpg;base64,'.base64_encode($image).'" />
-//         <input type="number" min="0" name="aantal">
 //         <input class="button" type="submit" value="Kopen">
 //    </div>
 //    </form>

@@ -89,3 +89,15 @@ background-color: #00555C;
     height: 30px;
     background-color: red;
 }
+#filter {
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 0px;
+    height: 100%;
+    width: 100px;
+    background-color: white;
+}
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+}
