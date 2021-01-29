@@ -45,7 +45,7 @@
         <div class="nav">
             <ul>
                 <li onclick="location.href='index.php?page=profiel_edit'">Profiel</li>
-                <li onclick="location.href='index.php?page=webshop'">Webshop</li>
+                <li onclick="location.href='index.php?page=webshop'">showroom</li>
                 <li onclick="uitloggen()">Uitloggen</li>
             </ul>
         </div>
@@ -57,7 +57,7 @@
          </div>
          <div class="nav-admin">
              <ul>
-                 <li onclick="location.href='index.php?page=albums'">Albums</li>
+                 <li onclick="location.href='index.php?page=albums'">auto's</li>
                  <li onclick="location.href='index.php?page=klanten'">Klanten</li>
                  <li onclick="location.href='index.php?page=weborders'">Weborders</li>
                  <li onclick="location.href='index.php?page=rapporten'">Rapporten</li>

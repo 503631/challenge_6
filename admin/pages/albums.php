@@ -30,7 +30,7 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
 
       foreach($albums as $album){
 
-          $id = $row['ID'];
+          $id = $album['id'];
 
         echo ($bgcolor ? "<tr bgcolor=#ccc>": "<tr>");
         echo
