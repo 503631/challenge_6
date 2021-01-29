@@ -6,7 +6,7 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
            location.href='../index.php';
          </script>";
 }
-?>
+?>  
 <div class="content">
   <table id='tabel' border="0" cellspacing="3">
     <caption>
@@ -29,7 +29,7 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
       $bgcolor = true;
 
       foreach($albums as $album){
-          $id = $album['ID'];
+          $id = $row['ID'];
         echo ($bgcolor ? "<tr bgcolor=#ccc>": "<tr>");
         echo
          "<td>".$album['titel']."</td>".
