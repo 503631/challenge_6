@@ -1,7 +1,7 @@
 <?php
 
 
-$sql = "SELECT * FROM autos";
+$sql = "SELECT * FROM autos_test where id >= 1";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result

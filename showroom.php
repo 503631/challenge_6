@@ -19,32 +19,19 @@ $_SESSION['true'] = false; ?> -->
     
     $("#navbar").load("common/navbar.html");
   </script></div>
- 
+
   <!-- #endregion -->
+
+
+
+
+
 
   <div id="filter"> 
   <?php include_once("inc/filter.inc.php") ?>
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <div id="menu">
         <?php include_once("inc/connectien.inc.php") ?>
@@ -72,13 +59,3 @@ $_SESSION['true'] = false; ?> -->
 
 
 
-
-    <!-- #region Footer-->
-    <div id="footer"></div>
-    <script>
-      $("#footer").load("common/footer.html");
-    </script>
-    <!-- #endregion -->
-  </body>
-  
-  </html>
