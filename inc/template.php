@@ -12,7 +12,7 @@
   <div class="row">';
   <input hidden value="goed" name="goed">';
   <!--<img class="test" src="data:image/jpg;base64,'.base64_encode($img).'" />'; -->
-  <input class="button" type="submit" value=" ' . $merken . ' ">';
+  <input class="button"  type="submit" value=" ' . $merken . ' ">';
   </div>
  </form>
 </div>
