@@ -29,16 +29,20 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
       $bgcolor = true;
 
       foreach($albums as $album){
-          $id = $album['ID'];
+          $id = $album['id'];
         echo ($bgcolor ? "<tr bgcolor=#ccc>": "<tr>");
         echo
          "<td>".$album['titel']."</td>".
          "<td>".$album['artiest']."</td>".
          "<td>".$album['genre']."</td>".
          "<td>".$album['prijs']."</td>".
-          "td <a styel='text-decoration:none' href='index.php?page=album_edit&id=".
-          $album['ID']."'>&#10062;</a></td></tr>";
+          "<td <a style='text-decoration:none' href='index.php?page=album_edit&id=".
+          $album['id']."'>&#9989;</a></td>".
+          "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=".
+          $album['id']."'>&#10062;</a></td></tr>";
           $bgcolor = ($bgcolor ? false:true);
+
+
       }
       ?>
       </tbody>

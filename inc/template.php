@@ -7,21 +7,25 @@
     <title></title>
 </head>
 <body>
-
+<div class="contentItem">';
+  <form action="" method="post">';
+  <div class="row">';
+  <input hidden value="goed" name="goed">';
+  <!--<img class="test" src="data:image/jpg;base64,'.base64_encode($img).'" />'; -->
+  <input class="button" type="submit" value=" ' . $merken . ' ">';
+  </div>
+ </form>
+</div>
 
 <?php
 
 //    $image = imagecreatefromstring($blob); 
 
-echo '<div class="contentItem">';
-echo '<form action="./showroom_cars.php" method="post">';
-echo '<div class="row">';
-echo '<input hidden value="goed" name="goed">';
-echo '<img class="test" src="data:image/jpg;base64,'.base64_encode($img).'" />'; 
-echo '<input class="button" type="submit" value=" ' . $merken . ' ">';
-echo'</div>';
-echo'</form>';
 
+if(isset($_POST["submit"]]){
+    $goed = htmlspecialchars($_POST["goed"]);
+    $sql = "SELECT FROM  WHERE dfsf LIKE '%$goed%'";
+}
 
 
 
