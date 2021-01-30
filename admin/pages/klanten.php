@@ -10,7 +10,7 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
 <div class="content">
   <table id='tabel' border="0" cellspacing="3">
     <caption>
-      <h3>Edit auto's</h3>
+      <h3>Edit klanten</h3>
     </caption>
     <thead>
       <tr>
@@ -18,30 +18,32 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
         <th>Artiest</th>
         <th>Genre</th>
         <th>Prijs</th>  
+        <th>email</th>  
       </tr>
     </thead>
     <tbody>
       <?php 
-      $sql = "SELECT * FROM album";
+      $sql = "SELECT * FROM klant";
       $stmt = $pdo->prepare($sql);
       $stmt->execute(array());
-      $albums = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      $klanten = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $bgcolor = true;
 
-      foreach($albums as $album){
+      foreach($klanten as $klant){
 
-          $id = $album['id'];
+          $id = $klant['id'];
 
         echo ($bgcolor ? "<tr bgcolor=#ccc>": "<tr>");
         echo
-         "<td>".$album['titel']."</td>".
-         "<td>".$album['artiest']."</td>".
-         "<td>".$album['genre']."</td>".
-         "<td>".$album['prijs']."</td>".
+         "<td>".$klant['voornaam']."</td>".
+         "<td>".$klant['achternaam']."</td>".
+         "<td>".$klant['straat']."</td>".
+         "<td>".$klant['postcode']."</td>".
+         "<td>".$klant['email']."</td>".
          "<td><a style='text-decoration:none' href='index.php?page=album_edit&id=".
-         $album['id']."'>&#9989;</a></td>".
+         $klant['id']."'>&#9989;</a></td>".
          "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=".
-          $album['id']."'>&#10062;</a></td></tr>";
+          $klant['id']."'>&#10062;</a></td></tr>";
           $bgcolor = ($bgcolor ? false:true);
 
 
@@ -51,7 +53,7 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
       <tfoot>
         <tr>
           <th colspan="6">
-           <div class="icon_container">
+          <div class="icon_container">
               <a class="icon" href="index.php?page=album_add">&#10012;</a>
             </div>
           </th>
