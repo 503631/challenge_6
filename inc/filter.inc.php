@@ -1,7 +1,4 @@
 
-
-
-
 <div class="block">
     <h2>merken</h2>
         <form action="./showroom.php" method="post">
@@ -14,10 +11,3 @@
     <input hidden name="clier">
     <input type="submit" value="Submit">
     </form>
-
-
-
-
-
-
-

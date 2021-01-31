@@ -12,7 +12,6 @@ $_SESSION['true'] = false; ?> -->
   <link rel="shortcut icon" href="images/cars.ico"  type="image/x-icon">
   <title>v!st@CARS</title>
 </head>
-
 <body>
   <!-- <img src="images/mk5.png"> -->
   <img class="logovista" src="images/logovista.webp" alt="">
@@ -23,13 +22,7 @@ $_SESSION['true'] = false; ?> -->
   </script></div>
  
   <!-- #endregion -->
-
-
   
-
-
-
-
     <!-- #region Footer-->
     <div id="footer"></div>
     <script>

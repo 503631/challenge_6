@@ -6,7 +6,6 @@
     $conn       = "";          // connection string
     $pdo        = "";          // handler
     $charset = 'utf8mb4';
-
     $conn = "mysql:host=" . $dbhost . "; dbname=" . $dbname . ";charset=". $charset;
     
     $options = [ // define options for PDO connection

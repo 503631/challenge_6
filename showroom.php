@@ -12,7 +12,6 @@ $_SESSION['true'] = false; ?> -->
   <link rel="shortcut icon" href="images/cars.ico"  type="image/x-icon">
   <title>v!st@CARS</title>
 </head>
-
 <body>
   <!-- <img src="images/mk5.png"> -->
     <!-- <img src="images/mk5.png"> -->
@@ -22,12 +21,9 @@ $_SESSION['true'] = false; ?> -->
     
     $("#navbar").load("common/navbar.html");
   </script></div>
-
-
   <div id="filter"> 
   <?php include_once("inc/filter.inc.php") ?>
   </div>
-
   <!-- #endregion -->
   <?php include_once("inc/connectien.inc.php") ?>
   <?php
@@ -36,30 +32,8 @@ $_SESSION['true'] = false; ?> -->
           print $merk;
           include("inc/autos.inc_test.php");
   }else{
+  echo  "<div id=\"auto\">";
     include("inc/autos.inc.php");
+  echo "</div>";
   }
-
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -12,7 +12,6 @@ $_SESSION['true'] = false; ?> -->
   <link rel="shortcut icon" href="images/cars.ico"  type="image/x-icon">
   <title>v!st@CARS</title>
 </head>
-
 <body>
      <!-- <img src="images/mk5.png"> -->
   <img class="logovista" src="images/logovista.webp" alt="">
@@ -23,12 +22,10 @@ $_SESSION['true'] = false; ?> -->
   </script></div>
  
   <!-- #endregion -->
-
 <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
@@ -59,20 +56,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $websiteErr = "Invalid URL";
     }
   }
-
   if (empty($_POST["comment"])) {
     $comment = "";
   } else {
     $comment = test_input($_POST["comment"]);
   }
-
   if (empty($_POST["gender"])) {
     $genderErr = "Gender is required";
   } else {
     $gender = test_input($_POST["gender"]);
   }
 }
-
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -80,7 +74,6 @@ function test_input($data) {
   return $data;
 }
 ?>
-
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   <div id="contact">Naam: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
@@ -98,18 +91,10 @@ function test_input($data) {
   <br><br></div>
   <input type="submit" name="submit" value="versturen">  
 </form>
-
-
 <?php
 ?>
  
-
-
   
-
-
-
-
     <!-- #region Footer-->
     <div id="footer"></div>
     <script>

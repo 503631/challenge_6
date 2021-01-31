@@ -11,7 +11,6 @@ $_SESSION['true'] = false; ?> -->
   <link rel="shortcut icon" href="images/cars.ico"  type="image/x-icon">
   <title>v!st@CARS</title>
 </head>
-
 <body>
   <!-- <img src="images/mk5.png"> -->
   <!-- #region Navbar-->
@@ -21,11 +20,6 @@ $_SESSION['true'] = false; ?> -->
   </script></div>
  
   <!-- #endregion -->
-
-
-
-
-
       <!-- #region Footer-->
       <div id="footer"></div>
     <script>

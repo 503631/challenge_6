@@ -7,13 +7,9 @@
     <title></title>
 </head>
 <body>
-
-
 <?php
-
 //    $image = imagecreatefromstring($blob); 
 //header("Content-Type: image/jpeg");
-
 echo '<div class="contentItem">';
 echo '<form action="./showroom_cars.php" method="post">';
 echo '<div class="row">';
@@ -22,27 +18,14 @@ echo '<img class="test" src="data:image/jpg;base64,'.base64_encode($img).'" />';
 echo '<input class="button" type="submit" value=" ' . $merken . ' ">';
 echo'</div>';
 echo'</form>';
-
-
-
-
-
+echo'</div>';
 //    $image = imagecreatefromstring($blob); 
-
-
 // function urlsafe_b64encode($string) {
 //     $data = base64_encode($string);
 //     $data = str_replace(array('+','/','='),array('-','_',''),$data);
 //     return $data;
 // }
-
-
-
-
-
-
 // $image = urlsafe_b64encode($img);
-
 //    $menu = <<<HTML
 //    <form action="./showroom.php" method="post">
 //    <div class="contentItem">
@@ -55,18 +38,10 @@ echo'</form>';
 //         <input class="button" type="submit" value="$merken">
 //    </div>
 //    </form>
-
 // HTML;
-
 //     echo $menu;
    
-
-
-
-?>
-<?php
 // $menu = <<<HTML
-
 // <div class="contentItem">
 //     <div class="row">
 //         <div class="menutitle">$titel</div>
@@ -75,8 +50,5 @@ echo'</form>';
 //     <img src="$img">
 //     <button >Kopen</button>
 // </div>
-
 // HTML;
-
 // echo $menu;
-
