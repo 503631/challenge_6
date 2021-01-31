@@ -21,10 +21,15 @@
       $("#navbar").load("common/navbar.html");
     </script>
   </div>
+  <!-- #endregion -->
+
+  <!-- #region Filter-->
   <div id="filter">
     <?php include_once("inc/filter.inc.php") ?>
   </div>
   <!-- #endregion -->
+  
+  <!-- #region Autos-->
   <?php include_once("inc/connectien.inc.php") ?>
   <?php
   if (isset(($_POST['clier']))) {
@@ -37,3 +42,15 @@
     echo "</div>";
   }
   ?>
+  <!-- #endregion -->
+
+  <!-- #region Footer-->
+  <div id="footer">
+    <script>
+      $("#footer").load("common/footer.html");
+    </script>
+  </div>
+  <!-- #endregion -->
+</body>
+
+</html>
