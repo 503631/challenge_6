@@ -45,10 +45,3 @@
         echo "<div id='melding'>$melding</div>";
     }
  }
-
-
-
-
-
-
-?>
