@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  
+
   <img class="logovista" src="images/logovista.webp" alt="">
   <!-- #region Navbar-->
   <div id="navbar">
@@ -20,7 +20,6 @@
       $("#navbar").load("common/navbar.html");
     </script>
   </div>
-
   <!-- #endregion -->
 </body>
 

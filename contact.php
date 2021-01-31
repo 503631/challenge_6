@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  
+
   <img class="logovista" src="images/logovista.webp" alt="">
   <!-- #region Navbar-->
   <div id="navbar">
@@ -23,7 +23,6 @@
       $("#navbar").load("common/navbar.html");
     </script>
   </div>
-
   <!-- #endregion -->
   <?php
   // define variables and set to empty values
@@ -39,7 +38,6 @@
         $nameErr = "Only letters and white space allowed";
       }
     }
-
     if (empty($_POST["email"])) {
       $emailErr = "Email is required";
     } else {
@@ -49,7 +47,6 @@
         $emailErr = "Invalid email format";
       }
     }
-
     if (empty($_POST["website"])) {
       $website = "";
     } else {
@@ -98,8 +95,6 @@
   </form>
   <?php
   ?>
-
-
   <!-- #region Footer-->
   <div id="footer"></div>
   <script>

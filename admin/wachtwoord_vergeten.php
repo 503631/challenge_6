@@ -14,7 +14,6 @@
       <p id="page_titel">Nieuw wachtwoord aanvragen</p>
       <input type="email" required name="e-mail" placeholder="e-mail" />
       <div class="g-recaptcha">
-
       </div>
       <div class="icon_container">
         <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />
@@ -22,19 +21,14 @@
       <a href="index.php">Terug</a>
     </form>
   </div>
-
   <?php
-
   if (isset($_POST["submit"])) {
     $melding = "";
     $email = htmlspecialchars($_POST['e-mail']);
-
     //Hier genereren we een token en een timestamp
-
     $token = bin2hex(random_bytes(32));
     $timestamp = new DateTime("now");
     $timestamp = $timestamp->getTimestamp();
-
     ///Hier slaan we het token voor deze klant in de database op 
     include('../DBconfig.php');
     try {
@@ -50,15 +44,12 @@
     } catch (PDOException $e) {
       echo $e->getMessage();
     }
-
     /// Hier configureren we de URL van de wachtwoord_resetten pagina
     $url = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'of-
     f' ? 'https' : 'https', $_SERVER['HTTP_HOST'] .
       dirname($_SERVER['PHP_SELF']) . "/wachtwoord_resetten.php");
-
     ///Hier voegen we het token en de timestamp aan de URL toe
     $url = $url . "?token=" . $token . "&timestamp=" . $timestamp;
-
     /// Hier mailen we de URL naar de klant
     include("../bibliotheek/mailen.php");
     $onderwerp = "Wachtwoord resetten";
@@ -71,7 +62,6 @@
     }
     echo "<div id='melding'" . $melding . "</div>";
   }
-
   ?>
 </body>
 

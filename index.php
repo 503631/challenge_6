@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <img class="logovista" src="images/logovista.webp" alt="">
   <!-- #region Navbar-->
   <div id="navbar">
@@ -23,9 +22,7 @@
       $("#navbar").load("common/navbar.html");
     </script>
   </div>
-
   <!-- #endregion -->
-
   <!-- #region Footer-->
   <div id="footer"></div>
   <script>

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  
+
   <img class="logovista" src="images/logovista.webp" alt="">
   <!-- #region Navbar-->
   <div id="navbar">
@@ -28,11 +28,8 @@
       $("#navbar").load("common/navbar.html");
     </script>
   </div>
-
   <!-- #endregion -->
   <div class="header">
-
-
     <!-- <div class="icon_container">
          <div class="icon">&#x266C;</div>
       </div>-->
@@ -40,11 +37,9 @@
     if (isset($_SESSION["ID"]) && $_SESSION["STATUS"] == "ACTIEF") {
       if ($_SESSION["ROL"] == 0) {
     ?>
-
         <div class="user">
           <p id="user">Gebruiker: <?php echo $_SESSION["USER_NAAM"]; ?></p>
         </div>
-
         <div class="nav">
           <ul>
             <li onclick="location.href='index.php?page=profiel_edit'">Profiel</li>

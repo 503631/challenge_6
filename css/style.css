@@ -1,23 +1,22 @@
-
 body {
-    background-image: url('../images/achtergrond3.png');
-    background-size: cover;
-    margin:0px;
-    padding:0px;
-  }
-  #navbar {
-    width: 100%;
-    height: auto;
-    background-color: #00555C;
-    position: sticky;
-    top: 0;
+  background-image: url("../images/achtergrond3.png");
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+#navbar {
+  width: 100%;
+  height: auto;
+  background-color: #00555c;
+  position: sticky;
+  top: 0;
 }
 #navbar a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    margin: 30px 50px;
-    font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 30px 50px;
+  font-size: 20px;
 }
 /* #navbar{
     width:83%;
@@ -42,58 +41,58 @@ body {
     text-decoration: none;
     font-size: 17px;
 } */
-#navbar a:hover{
-background-color: #00555C;
+#navbar a:hover {
+  background-color: #00555c;
 }
-.logovista{
-    height:100px;
+.logovista {
+  height: 100px;
 }
 #footer {
-    width: 100%;
-    height: 100px;
-    background-color: #e56a54;
-    /* position: fixed; */
-    vertical-align: middle;
-    line-height: 84px;
-    margin-top:182px;
+  width: 100%;
+  height: 100px;
+  background-color: #e56a54;
+  /* position: fixed; */
+  vertical-align: middle;
+  line-height: 84px;
+  margin-top: 182px;
 }
 .contentItem {
-    margin-right: 20px;
-    margin-left: 110px;
-    margin-top: 30px;
-    width: 300px;
-    height: 330px;
-    box-shadow: 0px 0px 25px lightgrey;
-    padding: 10px;
+  margin-right: 20px;
+  margin-left: 110px;
+  margin-top: 30px;
+  width: 300px;
+  height: 330px;
+  box-shadow: 0px 0px 25px lightgrey;
+  padding: 10px;
 }
 .test {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
 }
 .button {
-    display: inline-block;
-    width: 300px;
-    height: 30px;
-    background-color: red;
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  background-color: red;
 }
 #filter {
-    display: inline-block;
-    border: 1px solid black;
-    margin-left: 0px;
-    height: 100%;
-    width: 100px;
-    background-color: red;
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 0px;
+  height: 100%;
+  width: 100px;
+  background-color: red;
 }
 #menu {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-#contact{
-    top :50px;
-    left: 150px;
-    position: relative;
+#contact {
+  top: 50px;
+  left: 150px;
+  position: relative;
 }
-#auto{
-    display: inline;
+#auto {
+  display: inline;
 }
