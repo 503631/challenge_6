@@ -14,15 +14,14 @@
 </head>
 
 <body>
-  <!-- <img src="images/mk5.png"> -->
   <!-- #region Navbar-->
   <div id="navbar">
     <script>
       $("#navbar").load("common/navbar.html");
     </script>
   </div>
-
   <!-- #endregion -->
+
   <!-- #region Footer-->
   <div id="footer"></div>
   <script>

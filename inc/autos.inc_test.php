@@ -11,4 +11,3 @@ foreach($result as $key => $row) {
     $merken = $row['merken'];
     include("template.php");
 }
-?>

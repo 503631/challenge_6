@@ -4,7 +4,7 @@ $sql = "SELECT * FROM autos";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result
-foreach($result as $key => $row) {
+foreach ($result as $key => $row) {
     $merken = $row['merken'];
     include("template.php");
 }
@@ -12,7 +12,7 @@ $sql = "SELECT * FROM automerken where $merken = merken";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result
-foreach($result as $key => $row) {
+foreach ($result as $key => $row) {
     echo "<br/>";
     $id = $row['id'];
     $merken = $row['merken'];

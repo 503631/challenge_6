@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title></title>
 </head>
+
 <body>
-<?php
-//    $image = imagecreatefromstring($blob); 
-//header("Content-Type: image/jpeg");
-echo '<div class="contentItem">';
-echo '<form action="./showroom_cars.php" method="post">';
-echo '<div class="row">';
-echo '<input hidden value="goed" name="goed">';
-echo '<img class="test" src="data:image/jpg;base64,'.base64_encode($img).'" />'; 
-echo '<input class="button" type="submit" value=" ' . $merken . ' ">';
-echo'</div>';
-echo'</form>';
-echo'</div>';
+    <?php
+    //    $image = imagecreatefromstring($blob); 
+    //    $image = imagecreatefromstring($blob); 
+    //    $image = imagecreatefromstring($blob); 
+    //    $image = imagecreatefromstring($blob); 
+    //    $image = imagecreatefromstring($blob); 
+    //header("Content-Type: image/jpeg");
+    echo '<div class="contentItem">';
+    echo '<form action="./showroom_cars.php" method="post">';
+    echo '<div class="row">';
+    echo '<input hidden value="goed" name="goed">';
+    echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
+    echo '<input class="button" type="submit" value=" ' . $merken . ' ">';
+    echo '</div>';
+    echo '</form>';
+    echo '</div>';
 //    $image = imagecreatefromstring($blob); 
 // function urlsafe_b64encode($string) {
 //     $data = base64_encode($string);

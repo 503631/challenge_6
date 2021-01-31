@@ -15,9 +15,6 @@
 </head>
 
 <body>
-  <!-- <img src="images/mk5.png"> -->
-  <!-- <img src="images/mk5.png"> -->
-  <!-- <img class="logovista" src="images/logovista.webp" alt=""> -->
   <!-- #region Navbar-->
   <div id="navbar">
     <script>
