@@ -34,8 +34,10 @@
   <?php
   if (isset(($_POST['clier']))) {
     $merk = $_POST['merk'];
-    print $merk;
+    // print $merk;
+    echo  "<div id=\"auto\">";
     include("inc/autos.inc_test.php");
+    echo "</div>";
   } else {
     echo  "<div id=\"auto\">";
     include("inc/autos.inc.php");
