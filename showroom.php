@@ -20,27 +20,27 @@ $_SESSION['true'] = false; ?> -->
     $("#navbar").load("common/navbar.html");
   </script></div>
 
-  <!-- #endregion -->
-
-
-
-
-
-
   <div id="filter"> 
   <?php include_once("inc/filter.inc.php") ?>
   </div>
 
+  <!-- #endregion -->
+  <?php include_once("inc/connectien.inc.php") ?>
+  <?php
+        if (isset(($_POST['clier']))) {
+          $merk = $_POST['merk'];
+          print $merk;
+          include("inc/autos.inc_test.php");
+  }else{
+    include("inc/autos.inc.php");
+  }
+
+?>
 
 
-  <div id="menu">
-        <?php include_once("inc/connectien.inc.php") ?>
-        <div id="menu">
-            <?php include("inc/autos.inc.php") ?>
-        </div>
 
-    </div>
-  
+
+
 
 
 

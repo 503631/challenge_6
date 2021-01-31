@@ -89,7 +89,6 @@ background-color: #00555C;
     height: 30px;
     background-color: red;
 }
-<<<<<<< HEAD
 #filter {
     display: inline-block;
     border: 1px solid black;
@@ -101,11 +100,9 @@ background-color: #00555C;
 #menu {
     display: flex;
     flex-wrap: wrap;
-=======
-
+}
 #contact{
     top :50px;
     left: 150px;
     position: relative;
->>>>>>> aea696a2cafb2805cfc160d8efa2b19f385a0ddd
 }

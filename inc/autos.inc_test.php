@@ -1,7 +1,6 @@
 <?php
-
-
-$sql = "SELECT * FROM autos_test";
+// $merk = $_POST['merk'];
+$sql = "SELECT * FROM autos_test where merken = '$merk'";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result
