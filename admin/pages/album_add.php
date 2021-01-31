@@ -34,4 +34,3 @@ if(isset($_POST["submit"])){
     }
     echo "<div id='melding'>".$melding."</div>";
 }
-?>

@@ -1,6 +1,6 @@
-<?php 
- if(!isset($_SESSION["ID"])&&$_SESSION["STATUS"]!="ACTIEF"){
-    echo "<script>
+<?php
+if (!isset($_SESSION["ID"]) && $_SESSION["STATUS"] != "ACTIEF") {
+   echo "<script>
        alert('U heeft geen toegang tot deze pagina.');
        location.href='../index.php';
     </script>";
@@ -15,4 +15,4 @@ unset($_SESSION["ROL"]);
 ///session beeindigen
 session_destroy();
 $pdo = null;
-echo "<script>location.href='".$_SERVER["PHP_SELF"]."'</script>";
+echo "<script>location.href='" . $_SERVER["PHP_SELF"] . "'</script>";

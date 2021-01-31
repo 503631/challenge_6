@@ -1,12 +1,12 @@
-<?php 
+<?php
 
-if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
-    echo "<script>
+if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
+  echo "<script>
            alert('U heeft geet toegang tot deze pagins.');
            location.href='../index.php';
          </script>";
 }
-?>  
+?>
 <div class="content">
   <table id='tabel' border="0" cellspacing="3">
     <caption>
@@ -17,53 +17,51 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
         <th>Titel</th>
         <th>Artiest</th>
         <th>Genre</th>
-        <th>Prijs</th>  
-        <th>email</th>  
+        <th>Prijs</th>
+        <th>email</th>
       </tr>
     </thead>
     <tbody>
-      <?php 
+      <?php
       $sql = "SELECT * FROM klant";
       $stmt = $pdo->prepare($sql);
       $stmt->execute(array());
       $klanten = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $bgcolor = true;
 
-      foreach($klanten as $klant){
+      foreach ($klanten as $klant) {
 
-          $id = $klant['id'];
+        $id = $klant['id'];
 
-        echo ($bgcolor ? "<tr bgcolor=#ccc>": "<tr>");
+        echo ($bgcolor ? "<tr bgcolor=#ccc>" : "<tr>");
         echo
-         "<td>".$klant['voornaam']."</td>".
-         "<td>".$klant['achternaam']."</td>".
-         "<td>".$klant['straat']."</td>".
-         "<td>".$klant['postcode']."</td>".
-         "<td>".$klant['email']."</td>".
-         "<td><a style='text-decoration:none' href='index.php?page=album_edit&id=".
-         $klant['id']."'>&#9989;</a></td>".
-         "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=".
-          $klant['id']."'>&#10062;</a></td></tr>";
-          $bgcolor = ($bgcolor ? false:true);
-
-
+        "<td>" . $klant['voornaam'] . "</td>" .
+          "<td>" . $klant['achternaam'] . "</td>" .
+          "<td>" . $klant['straat'] . "</td>" .
+          "<td>" . $klant['postcode'] . "</td>" .
+          "<td>" . $klant['email'] . "</td>" .
+          "<td><a style='text-decoration:none' href='index.php?page=album_edit&id=" .
+          $klant['id'] . "'>&#9989;</a></td>" .
+          "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=" .
+          $klant['id'] . "'>&#10062;</a></td></tr>";
+        $bgcolor = ($bgcolor ? false : true);
       }
       ?>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="6">
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="6">
           <div class="icon_container">
-              <a class="icon" href="index.php?page=album_add">&#10012;</a>
-            </div>
-          </th>
-        </tr>
-        <tr>
-          <td colspan="6">
-           <!-- <a href="index.php?page=webshop">Terug</a>-->
-          </td>
-        </tr>
-      </tfoot>
+            <a class="icon" href="index.php?page=album_add">&#10012;</a>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <!-- <a href="index.php?page=webshop">Terug</a>-->
+        </td>
+      </tr>
+    </tfoot>
     </tbody>
   </table>
 </div>
