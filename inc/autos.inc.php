@@ -8,5 +8,6 @@ foreach ($result as $key => $row) {
     $naam = $row['naam'];
     $img = $row['foto'];
     $merken = $row['merken'];
+    $prijs = $row['prijs'];
     include("template.php");
 }
