@@ -21,6 +21,19 @@
     </script>
   </div>
   <!-- #endregion -->
+  <?php
+  if (isset(($_POST['id']))) {
+  echo '<div class="sowe">';
+  $id = $_POST['id'];
+  include_once("inc/connectien.inc.php"); 
+  include_once("inc/autosowe.inc.php");
+  echo '</div>';
+  }
+else{
+  header("Location: showroom.php");
+}
+
+?>
   <!-- #region Footer-->
   <div id="footer"></div>
   <script>

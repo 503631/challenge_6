@@ -19,9 +19,10 @@
     echo '<div class="contentItem">';
     echo '<form action="./showroom_cars.php" method="post">';
     echo '<div class="row">';
+    echo '<input hidden value="' . $id . '" name="id">';
     echo '<input hidden value="goed" name="goed">';
     echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
-    echo '<input class="button" type="submit" value=" ' . $merken . ' ">';
+    echo '<input class="button" type="submit" value=" ' . $prijs . ' ">';
     echo '</div>';
     echo '</form>';
     echo '</div>';

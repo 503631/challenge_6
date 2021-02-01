@@ -1,6 +1,10 @@
 <?php
+
+$id = $_POST['id'];
+
+
 // $merk = $_POST['merk'];
-$sql = "SELECT * FROM autos_test where merken = '$merk'";
+$sql = "SELECT * FROM autos_test where id = '$id'";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result
@@ -8,15 +12,13 @@ foreach ($result as $key => $row) {
     $id = $row['id'];
     $naam = $row['naam'];
     $img = $row['foto'];
+    $img_2 = $row['foto_2'];
+    $img_3 = $row['foto_3'];
     $merken = $row['merken'];
+    $newoud = $row['new/twee'];
+    $brandstiof = $row['brand stof'];
     $prijs = $row['prijs'];
-    include("template.php");
+    $jaar = $row['jaar'];
+    include("sowe.php");
 }
 ?>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
-</head>
