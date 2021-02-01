@@ -30,7 +30,7 @@
             <label>Voorraad:</label>
             <input type="text" name="voorraad" id="voorraad" value="" />
             <label>Upload cover:</label>
-            <input type="file" name="cover" id="cover" value="" />
+            <input type="file" name="images" id="images" value="" />
             <br />
             <div class="icon_container">
                 <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />

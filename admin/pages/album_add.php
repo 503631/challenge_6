@@ -14,9 +14,9 @@ if(isset($_POST["submit"])){
     $genre =  htmlspecialchars($_POST['genre']);
     $prijs =   htmlspecialchars($_POST['prijs']);
     $voorraad =  htmlspecialchars($_POST['voorraad']);
-    $cover =   htmlspecialchars($_POST['cover']);
+    $images =   htmlspecialchars($_POST['images']);
     
-    $sql = "INSERT INTO album (id, titel, artiest,genre, prijs, voorraad, cover) Values (?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO album (id, titel, artiest,genre, prijs, voorraad, images) Values (?,?,?,?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     try{
        $stmt->execute(array(
@@ -26,7 +26,7 @@ if(isset($_POST["submit"])){
            $genre,
            $prijs,
            $voorraad,
-           $cover)
+           $images)
        );
         $melding = "Nieuw album toegevoegd.";
     }catch(PDOException $e){

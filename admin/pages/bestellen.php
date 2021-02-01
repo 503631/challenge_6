@@ -10,7 +10,7 @@ if (isset($_POST["submit"])) {
     // Weborder aanmaken
     $datum = new DateTime();
     $datum = date_format($datum, "c");
-    $sql = "INSERT INTO weborder (id. klant_id. datum values (?.?.?)";
+    $sql = "INSERT INTO weborder (id. klant_id. datum values (?,?,?)";
 
     $stmt = $pdo->prepare($sql);
     session_start();

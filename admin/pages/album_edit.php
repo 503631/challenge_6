@@ -24,6 +24,8 @@ foreach ($albums as $album) {
       <input type="text" name="genre" id="genre" value="<?php echo $album['genre']; ?>" />
       <label>Prijs:</label>
       <input type="text" name="prijs" id="prijs" value="<?php echo $album['prijs']; ?>" />
+      <label>Images:</label>
+      <input type="text" name="images" id="images" value="<?php echo $album['images']; ?>" />
       <br />
       <div class="icon_container">
         <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />
