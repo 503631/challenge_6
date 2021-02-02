@@ -17,7 +17,8 @@ if(isset($_POST["submit"])){
     $brandstof =  htmlspecialchars($_POST['brandstof']);
     $newOfTwee =   htmlspecialchars($_POST['new/twee']);
     
-    $sql = "INSERT INTO autos_test (id, naam, foto, merken, jaar, prijs, brand stof, new'/'twee) Values (?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO autos_test (naam, foto, merken, jaar, prijs, brand_stof, new_twee)
+     Values (?,?,?,?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     try{
        $stmt->execute(array(
