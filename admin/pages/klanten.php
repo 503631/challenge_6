@@ -40,9 +40,9 @@ if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
           "<td>" . $klant['straat'] . "</td>" .
           "<td>" . $klant['postcode'] . "</td>" .
           "<td>" . $klant['email'] . "</td>" .
-          "<td><a style='text-decoration:none' href='index.php?page=album_edit&id=" .
+          "<td><a style='text-decoration:none' href='index.php?page=klant_edit&id=" .
           $klant['id'] . "'>&#9989;</a></td>" .
-          "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=" .
+          "<td><a style='text-decoration:none' href='index.php?page=klant_delete&id=" .
           $klant['id'] . "'>&#10062;</a></td></tr>";
         $bgcolor = ($bgcolor ? false : true);
       }
@@ -52,7 +52,7 @@ if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
       <tr>
         <th colspan="6">
           <div class="icon_container">
-            <a class="icon" href="index.php?page=album_add">&#10012;</a>
+            <a class="icon" href="index.php?page=klant_add">&#10012;</a>
           </div>
         </th>
       </tr>

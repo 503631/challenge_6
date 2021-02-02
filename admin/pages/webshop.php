@@ -51,7 +51,7 @@
       $albums = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $lus = 0;
       foreach ($albums as $album) {
-        echo "<img width='100px' src='img/" . $album['cover'] . "' />";
+        echo "<img width='100px' src='img/" . $album['images'] . "' />";
         echo "<input type='hidden' name='id[$lus]' value='" . $album['id'] . "' />";
         echo "<input type='hidden' name='titel[$lus]' id='titel[$lus]' value='" . $album['artiest'] . "' />";
         echo "<input type='hidden' name='artiest[$lus]' id='artiest[$lus]'value='" . $album['artiest'] . "' />";
@@ -67,7 +67,7 @@
       echo "<input type='hidden' name='lus' id='lus' value='" . $lus . "' />";
       ?>
 
-      <!--winkelmandje aan en uitzetten -->
+      <!--winkelmandje aan en uitzetten --
       <input type="checkbox" name="winkelmanje_knop" id="winkelmandje_knop" onclick="javascript:showWinkelmandje();" class="icon" value="&#128717;" />
       <label for="winkelmandje_knop">&#128717;</label>
       <br />
@@ -75,11 +75,11 @@
         <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />
       </div>
       <br />
-      <!--winkelmandje-->
+      <!-winkelmandje--
       <div id="winkelmandje">
         <div id="rijen"></div>
         <input type="checkbox" id="winkelmandje_knop" onclick="javascript:showWinkelmandje();" class="icon" value="x" />
-        <label for="winkelmandje_knop" style="color:red;">&#8861;</label>
+        <label for="winkelmandje_knop" style="color:red;">&#8861;</label>-->
       </div>
 </body>
 
