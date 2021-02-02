@@ -14,34 +14,40 @@ if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
     </caption>
     <thead>
       <tr>
-        <th>Titel</th>
-        <th>Artiest</th>
-        <th>Genre</th>
+        <th>naam</th>
+        <!--<th>foto</th>-->
+        <th>merken</th>
+        <th>Jaar</th>
         <th>Prijs</th>
+        <th>Brand stof</th>
+        <th>New/Twee</th>
       </tr>
     </thead>
     <tbody>
       <?php
-      $sql = "SELECT * FROM album";
+      $sql = "SELECT * FROM autos_test";
       $stmt = $pdo->prepare($sql);
       $stmt->execute(array());
-      $albums = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      $autos = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $bgcolor = true;
 
-      foreach ($albums as $album) {
+      foreach ($autos as $auto) {
 
-        $id = $album['id'];
+        $id = $auto['id'];
 
         echo ($bgcolor ? "<tr bgcolor=#ccc>" : "<tr>");
         echo
-        "<td>" . $album['titel'] . "</td>" .
-          "<td>" . $album['artiest'] . "</td>" .
-          "<td>" . $album['genre'] . "</td>" .
-          "<td>" . $album['prijs'] . "</td>" .
+        "<td>" . $auto['naam'] . "</td>" .
+          //"<td>" . $auto['foto'] . "</td>" .
+          "<td>" . $auto['merken'] . "</td>" .
+          "<td>" . $auto['jaar'] . "</td>" .
+          "<td>" . $auto['prijs'] . "</td>" .
+          "<td>" . $auto['brand stof'] . "</td>" .
+          "<td>" . $auto['new/twee'] . "</td>" .
           "<td><a style='text-decoration:none' href='index.php?page=album_edit&id=" .
-          $album['id'] . "'>&#9989;</a></td>" .
+          $auto['id'] . "'>&#9989;</a></td>" .
           "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=" .
-          $album['id'] . "'>&#10062;</a></td></tr>";
+          $auto['id'] . "'>&#10062;</a></td></tr>";
         $bgcolor = ($bgcolor ? false : true);
       }
       ?>

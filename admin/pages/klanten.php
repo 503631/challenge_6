@@ -14,10 +14,10 @@ if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
     </caption>
     <thead>
       <tr>
-        <th>Titel</th>
-        <th>Artiest</th>
-        <th>Genre</th>
-        <th>Prijs</th>
+        <th>Voornaam</th>
+        <th>Achternaam</th>
+        <th>Straat</th>
+        <th>Postcode</th>
         <th>email</th>
       </tr>
     </thead>

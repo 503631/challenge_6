@@ -9,24 +9,26 @@ include("album_add.inc.php");
 if(isset($_POST["submit"])){
 
     $melding = "";
-    $titel = htmlspecialchars($_POST['titel']);
-    $artiest =  htmlspecialchars($_POST['artiest']);
-    $genre =  htmlspecialchars($_POST['genre']);
+    $naam = htmlspecialchars($_POST['naam']);
+    $images =  htmlspecialchars($_POST['image']);
+    $merken =  htmlspecialchars($_POST['merk']);
+    $jaar =   htmlspecialchars($_POST['jaar']);
     $prijs =   htmlspecialchars($_POST['prijs']);
-    $voorraad =  htmlspecialchars($_POST['voorraad']);
-    $images =   htmlspecialchars($_POST['images']);
+    $brandstof =  htmlspecialchars($_POST['brandstof']);
+    $newOfTwee =   htmlspecialchars($_POST['new/twee']);
     
-    $sql = "INSERT INTO album (id, titel, artiest,genre, prijs, voorraad, images) Values (?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO autos_test (id, naam, foto, merken, jaar, prijs, brand stof, new'/'twee) Values (?,?,?,?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     try{
        $stmt->execute(array(
            NULL,
-           $titel,
-           $artiest,
-           $genre,
+           $naam,
+           $images,
+           $merken,
+           $jaar,
            $prijs,
-           $voorraad,
-           $images)
+           $brandstof,
+           $newOfTwee)
        );
         $melding = "Nieuw album toegevoegd.";
     }catch(PDOException $e){

@@ -18,19 +18,21 @@
     ?>
     <div class="content">
         <form name="albumtoevoegen" class="form" action="" method="POST">
-            <p id="page_titel"> album toevoegen</p>
-            <label>Titel:</label>
-            <input type="text" name="titel" id="titel" value="" />
-            <label>Artiest:</label>
-            <input type="text" name="artiest" id="artiest" value="" />
-            <label>Genre:</label>
-            <input type="text" name="genre" id="genre" value="" />
+            <p id="page_titel"> auto toevoegen</p>
+            <label>Naam:</label>
+            <input type="text" name="naam" id="naam" value="" />
+            <label>Foto:</label>
+            <input type="file" name="image" id="image" value="" />
+            <label>Merken:</label>
+            <input type="text" name="merk" id="merk" value="" />
+            <label>Jaar:</label>
+            <input type="text" name="jaar" id="jaar" value="" />
             <label>Prijs:</label>
             <input type="text" name="prijs" id="prijs" value="" />
-            <label>Voorraad:</label>
-            <input type="text" name="voorraad" id="voorraad" value="" />
-            <label>Upload cover:</label>
-            <input type="file" name="images" id="images" value="" />
+            <label>Brand stof:</label>
+            <input type="text" name="brandstof" id="brandstof" value="" />
+            <label>new/twee:</label>
+            <input type="text" name="new/twee" id="new/twee" value="" />
             <br />
             <div class="icon_container">
                 <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />

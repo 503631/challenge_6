@@ -6,7 +6,7 @@ if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
            location.href='../index.php';
          </script>";
 }
-$sql = "DELETE FROM album WHERE id = ?";
+$sql = "DELETE FROM autos_test WHERE id = ?";
 $stmt = $pdo->prepare($sql);
 try {
     $stmt->execute(array($_GET['id']));

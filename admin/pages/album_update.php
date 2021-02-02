@@ -9,13 +9,13 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIEF")){
 
 if(isset($_POST['submit'])){
     $id = htmlspecialchars($_POST['id']);
-    $titel = htmlspecialchars($_POST['titel']);
-    $artiest  = htmlspecialchars($_POST['artiest']);
-    $genre = htmlspecialchars($_POST['genre']);
+    $titel = htmlspecialchars($_POST['naam']);
+    $artiest  = htmlspecialchars($_POST['foto']);
+    $genre = htmlspecialchars($_POST['merk']);
     $prijs = htmlspecialchars($_POST['prijs']);
 
-    $sql = "UPDATE album SET 'titel' = ?, 'artiest' =?,
-            'genre' = ?, 'prijs' = ?,  WHERE 'id' = ? ";
+    $sql = "UPDATE autos_test SET 'naam' = ?, 'foto' =?,
+            'merken' = ?, 'prijs' = ?,  WHERE 'id' = ? ";
     $stmt = $pdo->prepare($query);
     try{
         $stmt = $stmt->execute(array($titel, $artiest, $genre,
