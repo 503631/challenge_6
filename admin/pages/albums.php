@@ -38,12 +38,12 @@ if (!isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
         echo ($bgcolor ? "<tr bgcolor=#ccc>" : "<tr>");
         echo
         "<td>" . $auto['naam'] . "</td>" .
-          //"<td>" . $auto['foto'] . "</td>" .
+         '<tb class="test" src="data:image/jpg;base64,' . base64_encode($auto).
           "<td>" . $auto['merken'] . "</td>" .
           "<td>" . $auto['jaar'] . "</td>" .
           "<td>" . $auto['prijs'] . "</td>" .
-          "<td>" . $auto['brand stof'] . "</td>" .
-          "<td>" . $auto['new/twee'] . "</td>" .
+          "<td>" . $auto['brand_stof'] . "</td>" .
+          "<td>" . $auto['new_twee'] . "</td>" .
           "<td><a style='text-decoration:none' href='index.php?page=album_edit&id=" .
           $auto['id'] . "'>&#9989;</a></td>" .
           "<td><a style='text-decoration:none' href='index.php?page=album_delete&id=" .
