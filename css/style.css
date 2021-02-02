@@ -57,6 +57,7 @@ body {
   line-height: 84px;
   margin-top: 182px;
   bottom: 0;
+  text-align: center;
 }
 .contentItem {
   width: 300px;
@@ -137,7 +138,7 @@ body {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #080808;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -180,12 +181,12 @@ body {
 }
 .sowe{
   margin: auto;
-  height: 1100px;
+  height: 600px;
   width: 1100px;
   position: auto;
   background-color: red;
   position: static;
-  margin-top:100px;
+  margin-top:0px;
 }
 .title{
   display: inline-block;
@@ -193,4 +194,51 @@ body {
 }
 .info{
   margin-left: 500px;
+}
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+  font-size: 200%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.box{
+  width:320;
+  margin:0px auto;
+  background:#fff;
+  border-radius:7px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+.box .heading{
+  background:#e56a54;
+  border-radius:7px 7px 0px 0px;
+  padding: 10px;
+  color:#fff;
+  text-align:center;
+  font-family:"Rubik";
+}
+.faqs{
+  font-size: 150%;
+  padding:10px 20px;
+}
+.faq{
+  font-size: 150%;
+  margin-top: 1%;
+  color: #080808;
+
 }
