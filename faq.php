@@ -24,3 +24,42 @@
 </body>
 
 </html>
+
+
+
+<div class="box">
+       <p class="heading">FAQs</p>
+       <div class="faqs">
+          <details>
+               <summary>Hoe moet ik betalen?</summary>
+               <p class="faq">dat kan niet online.</p>
+          </details>
+          <details>
+               <summary>Wat zijn de openingstijden?</summary>
+               <p class="faq">- maandag-vrijdag van 9:00 tot 16:00 uur</p>
+               <!-- <p class="text" style="color:red;">- gesloten in het weekend</p> -->
+          </details>
+          <details>
+               <summary>apspraak makken?</summary>
+               <p class="faq">je kunt en apspraak makken om de auto te kommen bekekijke.</p>
+          </details>
+          <details>
+               <summary>Hoe kan ik feedback geven?</summary>
+               <p class="faq">- Bij de contact pagina. Jij kunt contact opnemen met ons en feedback geven.</p> 
+          </details>
+          <details>
+               <summary>Word er ook bezorgd?</summary>
+               <p class="faq">- Nee, jij kan alleen afhalen.</p> 
+          </details>
+       </div>
+    </div>
+
+      <!-- #region Footer-->
+  <div id="footer"></div>
+  <script>
+    $("#footer").load("common/footer.html");
+  </script>
+  <!-- #endregion -->
+</body>
+
+</html>

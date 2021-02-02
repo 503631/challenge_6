@@ -109,15 +109,59 @@ function showSlides(n) {
     $jaar = $row['jaar']; -->
 
 <?Php
-    echo '<div class="info">';
-    echo '<div  class="menutitle" name="id">auto merk is ' . $merken . '</div>';
-    echo '<div  class="menutitle" name="id">new of tweede hans ' . $newoud . '</div>';
-    echo '<div  class="menutitle" name="id">brandstiof soorte ' . $brandstiof . '</div>';
-    echo '<div  class="menutitle" name="id">prijs € ' . $prijs . '</div>';
-    echo '<div  class="menutitle" name="id">jaar van bouw ' . $jaar . '</div>';
-    echo '</div>';
+    // // echo '<div class="info">';
+    // echo '<div id="example1">';
+    // echo '<div  class="menutitle" name="id">auto merk is ' . $merken . '</div>';
+    // // echo '<div  class="menutitle" name="id">' . $merken . '</div>';
+    // echo '</div>';
+    // echo '<div id="example1">';
+    // echo '<div  class="menutitle" name="id">new of tweede hans ' . $newoud . '</div>';
+    // echo '</div>';
+    // echo '<div id="example1">';
+    // echo '<div  class="menutitle" name="id">brandstiof soorte ' . $brandstiof . '</div>';
+    // echo '</div>';
+    // echo '<div id="example1">';
+    // echo '<div  class="menutitle" name="id">prijs € ' . $prijs . '</div>';
+    // echo '</div>';
+    // echo '<div id="example1">';
+    // echo '<div  class="menutitle" name="id">jaar van bouw ' . $jaar . '</div>';
+    // echo '</div>';
+    // // echo '</div>';
 ?>
+</style>
+</head>
+<body>
 
+
+<table>
+  <tr>
+    <th>vraag</th>
+    <th>antwoord</th>
+  </tr>
+  <tr>
+    <td>auto merk is</td>
+<?Php echo "<td> $merken </td>" ?>
+  </tr>
+  <tr>
+    <td>new of tweede hans</td>
+    <?Php echo "<td> $newoud </td>" ?>
+  </tr>
+  <tr>
+    <td>brandstiof soorte</td>
+    <?Php echo "<td> $brandstiof </td>" ?>
+  </tr>
+  <tr>
+    <td>prijs</td>
+    <?Php echo "<td>€ $prijs </td>" ?>
+  </tr>
+  <tr>
+    <td>jaar van bouw</td>
+    <?Php echo "<td> $jaar </td>" ?>
+  </tr>
+</table>
+
+</body>
+</html>
 
 
 
