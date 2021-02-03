@@ -2,21 +2,6 @@ body{
     margin:0px;
     padding:0px;
 }
-#navbar {
-    width: 100%;
-    height: auto;
-    background-color: #00555C;
-    position: sticky;
-    top: 0;
-}
-
-#navbar a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    margin: 30px 50px;
-    font-size: 20px;
-}
 .box{
     width:320;
     margin:100px auto;

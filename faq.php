@@ -8,8 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Document</title>
   <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/faq.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
