@@ -17,8 +17,7 @@ if(isset($_POST["submit"])){
     $brand_stof =  htmlspecialchars($_POST['brandstof']);
     $new_twee =   htmlspecialchars($_POST['new_twee']);
     
-    $sql = "INSERT INTO autos_test (naam, foto, merken, jaar, prijs, brand_stof, new_twee)
-     Values (?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO autos_test (id, naam, foto, merken, jaar, prijs, brand_stof, new_twee) Values (?,?,?,?,?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     try{
 

@@ -7,8 +7,9 @@
   <script src="https://kit.fontawesome.com/6488e6347e.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -40,16 +41,16 @@
                <!-- <p class="text" style="color:red;">- gesloten in het weekend</p> -->
           </details>
           <details>
-               <summary>apspraak makken?</summary>
-               <p class="faq">je kunt en apspraak makken om de auto te kommen bekekijke.</p>
+               <summary>afspraak maken?</summary>
+               <p class="faq">Je kunt en afspraak maken om de auto te komen bekijken.</p>
           </details>
           <details>
                <summary>Hoe kan ik feedback geven?</summary>
-               <p class="faq">- Bij de contact pagina. Jij kunt contact opnemen met ons en feedback geven.</p> 
+               <p class="faq">- Bij de contact pagina. kun je contact opnemen met ons en feedback geven.</p> 
           </details>
           <details>
                <summary>Word er ook bezorgd?</summary>
-               <p class="faq">- Nee, jij kan alleen afhalen.</p> 
+               <p class="faq">- Nee, je kan alleen afhalen.</p> 
           </details>
        </div>
     </div>

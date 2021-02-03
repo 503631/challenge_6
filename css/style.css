@@ -1,53 +1,10 @@
 body {
-  background-image: url("../images/achtergrond3.png");
+  /*background-image: url("../images/achtergrond.png");*/
   background-size: cover;
   margin: 0px;
   padding: 0px;
 }
-#navbar {
-  width: 100%;
-  height: auto;
-  background-color: #00555c;
-  position: sticky;
-  top: 0;
-  height: 80px;
-}
-#navbar a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  margin: 30px 50px;
-  font-size: 20px;
-}
-/* #navbar{
-    width:83%;
-    height:100px;
-    float: right;
-    position:sticky;
-    top:0px;
-    background-color: #e56a54;
-}
-#navbar a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    margin: 30px 50px;
-    font-size: 20px;
-} */
-/* #navbar a{
-    display:inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-} */
-#navbar a:hover {
-  background-color: #00555c;
-}
-.logovista {
-  height: 100px;
-}
+
 #footer {
   width: 100%;
   height: 100px;
