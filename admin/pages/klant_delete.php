@@ -11,7 +11,7 @@ $stmt = $pdo->prepare($sql);
 try {
     $stmt->execute(array($_GET['id']));
     echo "<script>
-           alert('Album is verwijdered.');
+           alert('Klant is verwijdered.');
            location.href='index.php?page=albums';
         </script>";
 } catch (PDOException $e) {
