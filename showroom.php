@@ -33,12 +33,31 @@
   <!-- #region Autos-->
   <?php include_once("inc/connectien.inc.php") ?>
   <?php
-  if (isset(($_POST['clier']))) {
+  if (isset(($_POST['merken']))) {
     $merk = $_POST['merk'];
     echo  "<div id=\"auto\">";
-    include("inc/autos.inc_test.php");
-    echo "</div>";
-  } else {
+    include("inc/autos.inc_merken.php");
+    echo "</div>";  
+  }
+  elseif (isset(($_POST['brand']))) {
+    $brand = $_POST['brand'];
+    echo  "<div id=\"auto\">";
+    include("inc/autos.inc_brand.php");
+    echo "</div>";  
+  }
+  elseif (isset(($_POST['newtwee']))) {
+    $newtwee = $_POST['newtwee'];
+    echo  "<div id=\"auto\">";
+    include("inc/autos.inc_newtwee.php");
+    echo "</div>";  
+  }
+  elseif (isset(($_POST['prijs']))) {
+    $prijs = $_POST['prijs'];
+    echo  "<div id=\"auto\">";
+    include("inc/autos.inc_prijs.php");
+    echo "</div>";  
+  }
+  else {
     echo  "<div id=\"auto\">";
     include("inc/autos.inc.php");
     echo "</div>";

@@ -33,9 +33,9 @@
   ///Hier wordt de sql -opdracht gegenereerd
   if (isset($_POST["zoeken"]) && !empty($_POST["patroon"])) {
     $patroon = htmlspecialchars($_POST["patroon"]);
-    $sql = "SELECT * FROM album WHERE titel LIKE '%$patroon' || artiest LIKE '%$patroon%' || genre LIKE '%$patroon%'";
+    $sql = "SELECT * FROM autos_test WHERE naam LIKE '%$patroon' || merken LIKE '%$patroon%' || jaar LIKE '%$patroon%'";
   } else {
-    $sql = "SELECT * FROM album LIMIT 3";
+    $sql = "SELECT * FROM autos_test";
   }
 
   ?>
@@ -51,16 +51,19 @@
       $albums = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $lus = 0;
       foreach ($albums as $album) {
-        echo "<img width='100px' src='img/" . $album['images'] . "' />";
+        // echo "<img width='100px' src='img/" . $album['images'] . "' />";
+        $img =  $album['images'];
+        echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
         echo "<input type='hidden' name='id[$lus]' value='" . $album['id'] . "' />";
-        echo "<input type='hidden' name='titel[$lus]' id='titel[$lus]' value='" . $album['artiest'] . "' />";
-        echo "<input type='hidden' name='artiest[$lus]' id='artiest[$lus]'value='" . $album['artiest'] . "' />";
-        echo "<input type='hidden' name='genre[$lus]' id='genre[$lus]' value='" . $album['genre'] . "' />";
+        echo "<input type='hidden' name='naam[$lus]' id='naam[$lus]' value='" . $album['naam'] . "' />";
+        echo "<input type='hidden' name='merken[$lus]' id='merken[$lus]'value='" . $album['merken'] . "' />";
+        echo "<input type='hidden' name='jaar[$lus]' id='jaar[$lus]' value='" . $album['jaar'] . "' />";
         echo "<input type='hidden' name='prijs'[$lus]' id='prijs[$lus]' value='" . $album['prijs'] . "' />  ";
-        echo "<br /> titel:" . $album["titel"] . "prijs:" . $album["prijs"];
+        echo "<br /> titel:" . $album["naam"];
+        echo "<br /> prijs:" . $album["prijs"];
         echo "<br /> Voorraad:" . $album["voorraad"];
         echo "<br />Aantal:";
-        echo "<input class='aantal' type='text' style='width:10%;' name='aantal[$lus]' id='aantal[$lus]' value='0' />";
+        echo "<input class='aantal' type='text' style='width:10%;' name='aantal[$lus]' id='aantal[$lus]' value='' />";
         echo "<hr />";
         $lus++;
       }
