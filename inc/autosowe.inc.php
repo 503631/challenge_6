@@ -15,8 +15,8 @@ foreach ($result as $key => $row) {
     $img_2 = $row['foto_2'];
     $img_3 = $row['foto_3'];
     $merken = $row['merken'];
-    $newoud = $row['new/twee'];
-    $brandstiof = $row['brand stof'];
+    $newoud = $row['new_twee'];
+    $brandstiof = $row['brand_stof'];
     $prijs = $row['prijs'];
     $jaar = $row['jaar'];
     include("sowe.php");

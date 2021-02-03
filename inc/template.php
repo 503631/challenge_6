@@ -26,6 +26,10 @@
     echo '</div>';
     echo '</form>';
     echo '</div>';
+
+
+
+
 //    $image = imagecreatefromstring($blob); 
 // function urlsafe_b64encode($string) {
 //     $data = base64_encode($string);

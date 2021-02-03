@@ -32,7 +32,7 @@
             <label>Brand stof:</label>
             <input type="text" name="brandstof" id="brandstof" value="" />
             <label>new/twee:</label>
-            <input type="text" name="new/twee" id="new/twee" value="" />
+            <input type="text" name="new_twee" id="new_twee" value="" />
             <br />
             <div class="icon_container">
                 <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />

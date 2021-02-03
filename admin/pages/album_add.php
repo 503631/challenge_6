@@ -10,28 +10,21 @@ if(isset($_POST["submit"])){
 
     $melding = "";
     $naam = htmlspecialchars($_POST['naam']);
-    $images =  htmlspecialchars($_POST['image']);
+    $foto =  htmlspecialchars($_POST['image']);
     $merken =  htmlspecialchars($_POST['merk']);
     $jaar =   htmlspecialchars($_POST['jaar']);
     $prijs =   htmlspecialchars($_POST['prijs']);
-    $brandstof =  htmlspecialchars($_POST['brandstof']);
-    $newOfTwee =   htmlspecialchars($_POST['new/twee']);
+    $brand_stof =  htmlspecialchars($_POST['brandstof']);
+    $new_twee =   htmlspecialchars($_POST['new_twee']);
     
     $sql = "INSERT INTO autos_test (naam, foto, merken, jaar, prijs, brand_stof, new_twee)
      Values (?,?,?,?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     try{
-       $stmt->execute(array(
-           NULL,
-           $naam,
-           $images,
-           $merken,
-           $jaar,
-           $prijs,
-           $brandstof,
-           $newOfTwee)
-       );
+
+       $stmt->execute(array(NULL,$naam,$foto,$merken,$jaar,$prijs,$brand_stof,$new_twee));
         $melding = "Nieuw album toegevoegd.";
+        
     }catch(PDOException $e){
         $melding = "Kon geen nieuw album aanmaken.".$e->getMessage();
     }
