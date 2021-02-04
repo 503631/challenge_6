@@ -1,5 +1,9 @@
 #navbar {
+<<<<<<< HEAD
   width: 83.35%;
+=======
+  width: 80%;
+>>>>>>> 56004f9f15bfe2cae1fd08f538412b296f92816e
   height: 100px;
   float: right;
   position: sticky;
@@ -15,7 +19,11 @@
 }
 .logovista {
   height: 100px;
+<<<<<<< HEAD
   position: sticky;
   top: 0px;
   background-color: black;
+=======
+  
+>>>>>>> 56004f9f15bfe2cae1fd08f538412b296f92816e
 }

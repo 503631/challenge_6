@@ -14,7 +14,7 @@
 
 <body>
 
-  <img class="logovista" src="images/logovista.webp" alt="">
+  <img class="logovista" src="images/logovista.jpg" alt="">
   <!-- #region Navbar-->
   <div id="navbar">
     <script>
