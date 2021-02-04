@@ -62,9 +62,12 @@
     </form>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="block">
     <h4>New of tweede hans</h4>
 =======
+=======
+>>>>>>> 533e2bf38ef37635d4483852b14daaa6dbe0fd8c
 <div class="block" id="block3" >
     <h4>new of tweede hans</h4>
 >>>>>>> 533e2bf38ef37635d4483852b14daaa6dbe0fd8c
@@ -78,9 +81,12 @@
     </form>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="block">
     <h4>Maximaale prijs</h4>
 =======
+=======
+>>>>>>> 533e2bf38ef37635d4483852b14daaa6dbe0fd8c
 <div class="block" id="block4">
     <h4>maksiemalen prijs</h4>
 >>>>>>> 533e2bf38ef37635d4483852b14daaa6dbe0fd8c
