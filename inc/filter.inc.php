@@ -1,4 +1,5 @@
-<div class="block">
+<div class="blockCon">
+<div class="block" id="block1">
     <h4>merken</h4>
     <form action="./showroom.php" method="post">
         <input type="checkbox" id="merk" name="merk" value="lexus">
@@ -41,7 +42,7 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-<div class="block">
+<div class="block" id="block2">
     <h4>brand stof</h4>
     <form action="./showroom.php" method="post">
         <input type="checkbox" id="brand" name="brand" value="euro 95">
@@ -60,7 +61,7 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-<div class="block">
+<div class="block" id="block3" >
     <h4>new of tweede hans</h4>
     <form action="./showroom.php" method="post">
         <input type="checkbox" id="newtwee" name="newtwee" value="new">
@@ -71,7 +72,7 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-<div class="block">
+<div class="block" id="block4">
     <h4>maksiemalen prijs</h4>
     <form action="./showroom.php" method="post">
         <input type="text" id="prijs" name="prijs" value="">
@@ -79,7 +80,7 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-
+</div>
 
 
 
