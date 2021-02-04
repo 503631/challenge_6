@@ -75,6 +75,7 @@
     return $data;
   }
   ?>
+  <div id="contact">
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <div id="contact">Naam: <input type="text" name="name" value="<?php echo $name; ?>">
       <span class="error">* <?php echo $nameErr; ?></span>
@@ -93,6 +94,7 @@
       </div>
       <input type="submit" name="submit" value="versturen">
   </form>
+</div>
   <?php
   ?>
   <!-- #region Footer-->
