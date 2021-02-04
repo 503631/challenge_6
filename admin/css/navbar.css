@@ -15,4 +15,8 @@
 }
 .logovista {
   height: 100px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
 }
