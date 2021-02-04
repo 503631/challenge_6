@@ -12,7 +12,7 @@
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+.mySlides {display:none}
 img {vertical-align: middle;}
 
 @-webkit-keyframes fade {

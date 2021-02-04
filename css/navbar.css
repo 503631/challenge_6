@@ -1,5 +1,5 @@
 #navbar {
-  width: 83%;
+  width: 80%;
   height: 100px;
   float: right;
   position: sticky;
@@ -15,4 +15,5 @@
 }
 .logovista {
   height: 100px;
+  
 }
