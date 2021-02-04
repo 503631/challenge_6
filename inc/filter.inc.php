@@ -42,7 +42,7 @@
     </form>
 </div>
 <div class="block">
-    <h4>brand stof</h4>
+    <h4>brandstof</h4>
     <form action="./showroom.php" method="post">
         <input type="checkbox" id="brand" name="brand" value="euro 95">
         <label for="euro 95">euro 95</label><br>
@@ -61,7 +61,7 @@
     </form>
 </div>
 <div class="block">
-    <h4>new of tweede hans</h4>
+    <h4>new of tweedehands</h4>
     <form action="./showroom.php" method="post">
         <input type="checkbox" id="newtwee" name="newtwee" value="new">
         <label for="new">new</label><br>
@@ -72,7 +72,7 @@
     </form>
 </div>
 <div class="block">
-    <h4>maksiemalen prijs</h4>
+    <h4>maximale prijs</h4>
     <form action="./showroom.php" method="post">
         <input type="text" id="prijs" name="prijs" value="">
         <input hidden name="prijssen">
