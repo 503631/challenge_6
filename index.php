@@ -15,15 +15,12 @@
 </head>
 
 <body>
-  
+  <img class="logovista" src="images/logovista.webp" alt="">
   <!-- #region Navbar-->
-  <div id="logovistaEnNavbar">
-     <img class="logovista" src="images/logovista.jpg" alt="">
-   <div id="navbar">
-     <script>
+  <div id="navbar">
+    <script>
       $("#navbar").load("common/navbar.html");
-     </script>
-   </div>
+    </script>
   </div>
   <!-- #endregion -->
 
