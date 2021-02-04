@@ -36,13 +36,13 @@ body {
 #filter {
   margin: 0;
   padding: 0;
-  width: 120px;
+  width: 170px;
   position: fixed;
   height: 90%;
   overflow: auto;
-  top: 80px;
+  top: 100px;
   border: 1px solid black;
-  background-color: red;
+  background-color:#e56a54;
   overflow: scroll;
 }
 #menu {

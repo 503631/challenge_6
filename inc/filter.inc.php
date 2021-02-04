@@ -56,7 +56,7 @@
         <label for="spec.diesel">spec</label><br>
         <input type="checkbox" id="brand" name="brand" value="LPG">
         <label for="LPG">LPG</label><br>
-        <input hidden name="brand">
+        <input hidden name="branden">
         <input type="submit" value="Submit">
     </form>
 </div>
@@ -65,9 +65,9 @@
     <form action="./showroom.php" method="post">
         <input type="checkbox" id="newtwee" name="newtwee" value="new">
         <label for="new">new</label><br>
-        <input type="checkbox" id="newtwee" name="newtwee" value="tweedehans">
+        <input type="checkbox" id="newtwee" name="newtwee" value="twee">
         <label for="tweedehans">twee</label><br>
-        <input hidden name="newtwee">
+        <input hidden name="newtwees">
         <input type="submit" value="Submit">
     </form>
 </div>
@@ -75,7 +75,7 @@
     <h4>maksiemalen prijs</h4>
     <form action="./showroom.php" method="post">
         <input type="text" id="prijs" name="prijs" value="">
-        <input hidden name="prijs">
+        <input hidden name="prijssen">
         <input type="submit" value="Submit">
     </form>
 </div>

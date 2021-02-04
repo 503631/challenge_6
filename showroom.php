@@ -39,19 +39,19 @@
     include("inc/autos.inc_merken.php");
     echo "</div>";  
   }
-  elseif (isset(($_POST['brand']))) {
+  elseif (isset(($_POST['branden']))) {
     $brand = $_POST['brand'];
     echo  "<div id=\"auto\">";
     include("inc/autos.inc_brand.php");
     echo "</div>";  
   }
-  elseif (isset(($_POST['newtwee']))) {
+  elseif (isset(($_POST['newtwees']))) {
     $newtwee = $_POST['newtwee'];
     echo  "<div id=\"auto\">";
     include("inc/autos.inc_newtwee.php");
     echo "</div>";  
   }
-  elseif (isset(($_POST['prijs']))) {
+  elseif (isset(($_POST['prijssen']))) {
     $prijs = $_POST['prijs'];
     echo  "<div id=\"auto\">";
     include("inc/autos.inc_prijs.php");
